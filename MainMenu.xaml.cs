@@ -25,6 +25,9 @@ namespace Projekt_Mastermind
             
         }
 
-        
+        private void NewGame_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Square());
+        }
     }
 }

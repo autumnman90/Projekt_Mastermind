@@ -23,7 +23,7 @@ namespace Projekt_Mastermind
         public MainWindow()
         {
             InitializeComponent();
-            MasterFrame.NavigationService.Navigate(new Page1());
+            MasterFrame.NavigationService.Navigate(new MainMenu());
             
         }
     }

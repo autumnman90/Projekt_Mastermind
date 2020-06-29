@@ -28,7 +28,7 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="NewGame" Content=" Neues Spiel " Margin="5,5,5,5" Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="NewGame" Content=" Neues Spiel " Margin="5,5,5,5" Grid.Column="1" Grid.Row="2" Click="NewGame_Click"/>
         <Button x:Name="Options" Content=" Optionen " Margin="5,5,5,5" Grid.Column="1" Grid.Row="3"/>
         <Button x:Name="Help" Content="Hilfe" Margin="5,5,5,5" Grid.Column="1" Grid.Row="4"/>
         <Button x:Name="Credits" Content="Credits" Margin="5,5,5,5" Grid.Column="1" Grid.Row="5"/>
