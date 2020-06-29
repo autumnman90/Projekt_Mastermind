@@ -1,0 +1,14 @@
+﻿<Window x:Class="Projekt_Mastermind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_Mastermind"
+        mc:Ignorable="d"
+        Title="Projekt Mastermind" Height="600" Width="800">
+    <Grid>
+        <Frame x:Name="MasterFrame" NavigationUIVisibility="Hidden"/>
+
+
+    </Grid>
+</Window>
