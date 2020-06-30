@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -25,12 +26,14 @@ namespace Projekt_Mastermind
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+            
             NavigationService.Navigate(new MainMenu());
         }
 
         private void btn_Mouse(object sender, MouseEventArgs e)
         {
-
+            
         }
     }
 }

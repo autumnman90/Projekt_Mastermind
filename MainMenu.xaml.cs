@@ -21,12 +21,13 @@ namespace Projekt_Mastermind
         public MainMenu()
         {
             InitializeComponent();
-            
-            
         }
+            
+            
 
         private void NewGame_Click(object sender, RoutedEventArgs e)
         {
+            Square.findMe = Game.NewCode();
             NavigationService.Navigate(new Square());
         }
     }
