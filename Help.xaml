@@ -1,0 +1,17 @@
+﻿<Page x:Class="Projekt_Mastermind.Help"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekt_Mastermind"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Help"
+      Background="Sienna">
+
+    <Grid>
+        <TextBlock FontSize="14" HorizontalAlignment="Center" Height="356" Margin="0,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="652"><Run Language="de-de" Text="Darum geht's:"/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Bei Projekt Mastermind geht es darum den gesuchten Farbcode aus den Farben Blau, Rot, Grün und Gelb zu finden. Dabei kann jede Farbe mehrfach vergeben sein.  Nach jeder von dir eingegebenen Zeile bekommst du auf der rechten Seite des Spielfeldes ein Feedback über die Richtigkeit deines Codes. Hierbei zeigen dir schwarze Punkte an dass du eine richtige Farbe an der richtigen Stelle hast und weiße Punkte ob eine Farbe im Code korrekt ist. Leere Punkte geben an dass weder die Position noch die Farbe korrekt ist. "/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Und so geht's:"/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Um eine Farbe an deine gewünschte Position zu setzen wähle zunächst auf der linken Seite des Spielfeldes die Farbe deiner Wahl aus. Als nächstes kannst diese nun mit der der Pfeilbuttons unter der jeweiligen Spalte positionieren. Wenn du alle Spalten mit deinen Wunschfarben befüllt hast, kannst du mit Hilfe des Buttons &quot;Prüfen&quot; deinen Code prüfen lassen. Nun werden dir auf der rechten Seite wie oben erklärt in der Checkbox deine Treffer angezeigt. Du hast versehentlich eine falsche Farbe an die falsche Position gesetzt? So lange du den Prüfen Button noch nicht geklickt hast steht es dir frei deinen Code weiterhin nach belieben zu ändern. Solltest du nach 7 Versuchen den Code nicht gefunden haben,  dann hast du leider verloren, aber Kopf hoch schließlich ist ja noch kein Meister vom Himmel gefallen ;)"/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Have FUN!"/></TextBlock>
+        <Button x:Name="BackToMain" Content="Zurück" HorizontalAlignment="Center" Height="38" Margin="0,402,0,0" VerticalAlignment="Top" Width="132" Click="BackToMain_Click"/>
+
+    </Grid>
+</Page>

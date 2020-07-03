@@ -21,6 +21,11 @@ namespace Projekt_Mastermind
         public MainMenu()
         {
             InitializeComponent();
+            NGArw.Visibility = Visibility.Hidden;
+            OptArw.Visibility = Visibility.Hidden;
+            HlpArw.Visibility = Visibility.Hidden;
+            CrdArw.Visibility = Visibility.Hidden;
+            QutArw.Visibility = Visibility.Hidden;
         }
             
             
@@ -29,6 +34,61 @@ namespace Projekt_Mastermind
         {
             Square.findMe = Game.NewCode();
             NavigationService.Navigate(new Square());
+        }
+
+        private void Options_MouseEnter(object sender, MouseEventArgs e)
+        {
+            OptArw.Visibility = Visibility.Visible;
+        }
+
+        private void Options_MouseLeave(object sender, MouseEventArgs e)
+        {
+            OptArw.Visibility = Visibility.Hidden;
+        }
+
+        private void NewGame_MouseEnter(object sender, MouseEventArgs e)
+        {
+            NGArw.Visibility = Visibility.Visible;
+        }
+
+        private void NewGame_MouseLeave(object sender, MouseEventArgs e)
+        {
+            NGArw.Visibility = Visibility.Hidden;
+        }
+
+        private void Help_MouseEnter(object sender, MouseEventArgs e)
+        {
+            HlpArw.Visibility = Visibility.Visible;
+        }
+
+        private void Help_MouseLeave(object sender, MouseEventArgs e)
+        {
+            HlpArw.Visibility = Visibility.Hidden;
+        }
+
+        private void Credits_MouseEnter(object sender, MouseEventArgs e)
+        {
+            CrdArw.Visibility = Visibility.Visible;
+        }
+
+        private void Credits_MouseLeave(object sender, MouseEventArgs e)
+        {
+            CrdArw.Visibility = Visibility.Hidden;
+        }
+
+        private void Quit_MouseEnter(object sender, MouseEventArgs e)
+        {
+            QutArw.Visibility = Visibility.Visible;
+        }
+
+        private void Quit_MouseLeave(object sender, MouseEventArgs e)
+        {
+            QutArw.Visibility = Visibility.Hidden;
+        }
+
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Help());
         }
     }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,18 +14,18 @@ using System.Windows.Shapes;
 namespace Projekt_Mastermind
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Help.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Help : Page
     {
-        public MainWindow()
+        public Help()
         {
             InitializeComponent();
-            MasterFrame.NavigationService.Navigate(new Page1());
-            
-            //Sound.playSoundLoop();
         }
 
-        
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainMenu());
+        }
     }
 }

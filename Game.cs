@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Media;
 using System.Text;
 
 namespace Projekt_Mastermind
 {
+    public enum SND
+    {
+        Play,
+        Stop
+    }
+
     class Game
     {
         //
+        
 
         public static CodeColor[] NewCode()
         {
@@ -23,27 +31,58 @@ namespace Projekt_Mastermind
         }
 
 
-        public static bool CheckCode(CodeColor[] original, CodeColor[] input)
+        public static CBox[] CheckCode(CodeColor[] original, CodeColor[] input)
         {
-            bool solved = false;
-            int counter = 0;
+            int cntRightPlace = 0;
+            int cntRightColor = 0;
+            int dif = 0;
+
+            CBox[] output = new CBox[4];
+            //TODO: for schleifen durch whileschliefe ersetzen (Kassettenmethode)
 
             for (int i = 0; i < original.Length; i++)
             {
                 if (original[i] == input[i])
                 {
-                    counter++;
+                    cntRightPlace++;
+                    continue;
+                }
+                else
+                {
+                    
+                    for (int j = 0; j < original.Length; j++)
+                    {
+                        if (original[j] == input[i])
+                        {
+                            cntRightColor++;
+                        }
+                    }
+                    
                 }
             }
 
-            if (counter > 3)
+            if (cntRightPlace > cntRightColor)
             {
-                solved = true;
+                dif = cntRightPlace - cntRightColor;
+            }
+            else if (cntRightColor > cntRightPlace)
+            {
+                dif = cntRightColor - cntRightPlace;
             }
 
-            return solved;
-        }
 
-        
+            for (int i = 0; i < cntRightPlace; i++)
+            {
+                output[i] = CBox.Black;
+            }
+
+            for (int i = cntRightPlace; i < dif; i++)
+            {
+                output[i] = CBox.White;
+            }
+
+            return output;
+        }
+   
     }
 }
